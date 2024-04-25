@@ -32,8 +32,8 @@ body {
 }
 
 
-#top_block #action_button {
-  margin-right: auto;
+#action_button {
+  margin-left: auto;
   width: 100px;
   height: 30px;
 }
