@@ -29,9 +29,7 @@
             tg.expand()
 
             document.getElementById('user_name').innerHTML = tg.initDataUnsafe.user.first_name;
-            const avatarUrl = tg.getUser().photoUrl;
-            const avatarImage = document.getElementById('avatar_image');
-            avatarImage.src = avatarUrl;
+            document.getElementById('avatar_image').src = tg.initDataUnsafe.user.photo_url;
         </script>
     </body>
 </html>

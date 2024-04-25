@@ -20,49 +20,41 @@
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: #f1f1f1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #333232;
   }
   
-  #top_block #name {
-    margin-right: 10px;
+
+  #top_block #user_name {
+    margin-left: 20px;
   }
   
+
   #top_block #action_button {
     margin-left: auto;
+    width: 100px;
+    height: 30px;
   }
 
 
-  h1 {
-    margin-bottom: 20px;
-  }
-
-
-  img {
-    width: 300px;
-    height: 0 auto;
-    margin-bottom: 20px;
-  }
-
-
-  p {
-    font-size: 20px;
-    margin-bottom: 20px;
+  #top_block #avatar_image {
+    background: #ffffff;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 0;
   }
 
 
   button {
     border: 0;
     border-radius: 5px;
-    height: 60px;
-    width: 200px;
-    font-size: 20px;
-    font-family: "Forum", serif;
     background-color: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
-    font-weight: bold;
     cursor: pointer;
     transition: all 500ms ease;
-    margin-bottom: 70px;
   }
 
 
@@ -87,4 +79,5 @@
   #button_container_bottom button {
     margin: 0 10px;
     height: 30px;
+    width: 200px;
   }
