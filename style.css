@@ -33,7 +33,8 @@ body {
 
 
 #action_button {
-  margin-left: auto;
+  position: absolute;
+  margin-right: auto;
   width: 100px;
   height: 30px;
 }

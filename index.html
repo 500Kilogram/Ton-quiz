@@ -18,7 +18,7 @@
             <button id="action_button" onclick="connectToWallet()">Подключить</button>
         </div>
         <div id="button_container_bottom">
-            <button id="main_button" onclick="disconnectWallet() ">disconnect</button>
+            <button id="main_button" onclick="disconnectWallet() ">Disconnect</button>
             <button id="lottery_button">Квизы</button>
             <button id="info_button">Инфо</button>
             <button id="profile_button">Профиль</button>
@@ -30,7 +30,7 @@
             tg.expand()
 
 
-            document.getElementById('user_name').innerHTML = tg.initDataUnsafe.user.first_name;
+            
 
 
             const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
