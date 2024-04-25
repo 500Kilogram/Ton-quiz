@@ -12,22 +12,26 @@
     </head>
     <body>
         <div id="main">
-            <h1>Онлайн магазин</h1>
-            <img src="img/1.jpg">
-            <p>Описание</p>
-            <button>Кнопка</button>
+            <img id="avatar-image" src="">
+            <span id="name"></span>
+            <button id="action-button">Action</button>
         </div>
-        <div class="button-container">
-            <button class="main-button">Главная</button>
-            <button class="lottery-button">Квизы</button>
-            <button class="info-button">Инфо</button>
-            <button class="profile-button">Профиль</button>
+        <div id="button-container_bottom">
+            <button id="main-button">Главная</button>
+            <button id="lottery-button">Квизы</button>
+            <button id="info-button">Инфо</button>
+            <button id="profile-button">Профиль</button>
         </div>
         <div></div>
         <script src="https://telegram.org/js/telegram-web-app.js"></script>
         <script>
             const tg = window.Telegram.WebApp;
             tg.expand()
+
+            document.getElementById('name').value = tg.initDataUnsafe.user.first_name;
+            const avatarUrl = tg.getUser().photoUrl;
+            const avatarImage = document.getElementById('avatar-image');
+            avatarImage.src = avatarUrl;
         </script>
     </body>
 </html>
