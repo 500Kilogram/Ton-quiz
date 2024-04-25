@@ -5,8 +5,8 @@
   }
   
   body {
-    background: var(--tg-theme-bg-color);
-    color: #000000;
+    background: #000000;
+    color: var(--tg-theme-text-color);
     font-family: "Forum", serif;
   }
   
