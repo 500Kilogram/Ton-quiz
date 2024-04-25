@@ -32,14 +32,7 @@ body {
 }
 
 
-#action_button {
-  position: absolute;
-  margin-right: auto;
-  width: 100px;
-  height: 30px;
-}
-
-#disconnect_button {
+#top_block #action_button {
   position: absolute;
   margin-right: auto;
   width: 100px;
