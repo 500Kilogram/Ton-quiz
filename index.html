@@ -48,13 +48,12 @@
             const disconnectButton = document.createElement('button');
             disconnectButton.innerHTML = 'Disconnect';
             disconnectButton.id = 'disconnect_button'; // Установка идентификатора
-            
+            tonConnectUI.disconnect();
             // Добавление кнопки в документ
             document.body.appendChild(disconnectButton);
             
             // Обработчик события нажатия на кнопку
             disconnectButton.addEventListener('click', () => {
-                tonConnectUI.disconnect();
                 console.log('Disconnect button clicked');
             });
         </script>
