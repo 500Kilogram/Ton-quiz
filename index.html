@@ -40,28 +40,26 @@
                 const connectedWallet = await tonConnectUI.connectWallet();
                 // Do something with connectedWallet if needed
                 console.log(connectedWallet);
+                const topBlock = document.getElementById('top_block');
+            
+                // Создание элемента кнопки
+                const disconnectButton = document.createElement('button');
+                disconnectButton.innerHTML = 'Disconnect';
+                disconnectButton.id = 'disconnect-button'; // Установка идентификатора
+                
+                // Добавление кнопки в блок top_block
+                topBlock.appendChild(disconnectButton);
+                
+                const actionButton = document.getElementById('action_button');
 
+                // Скрытие кнопки action_button
+                actionButton.style.display = 'none';
             }
             
             async function disconnectWallet() {
                 await tonConnectUI.disconnect();
             }
 
-            // Нахождение блока с идентификатором top_block
-            const topBlock = document.getElementById('top_block');
-            
-            // Создание элемента кнопки
-            const disconnectButton = document.createElement('button');
-            disconnectButton.innerHTML = 'Disconnect';
-            disconnectButton.id = 'disconnect-button'; // Установка идентификатора
-            
-            // Добавление кнопки в блок top_block
-            topBlock.appendChild(disconnectButton);
-            
-            const actionButton = document.getElementById('action_button');
-
-            // Скрытие кнопки action_button
-            actionButton.style.display = 'none';
 
             // Обработчик события нажатия на кнопку
             disconnectButton.addEventListener('click', async () => {
