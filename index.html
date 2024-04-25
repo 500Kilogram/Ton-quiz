@@ -40,9 +40,22 @@
                 const connectedWallet = await tonConnectUI.connectWallet();
                 // Do something with connectedWallet if needed
                 console.log(connectedWallet);
+
             }
-            connectToWallet().catch(error => {
-                console.error("Error connecting to wallet:", error);
+            
+
+            // Создание элемента кнопки
+            const disconnectButton = document.createElement('button');
+            disconnectButton.innerHTML = 'Disconnect';
+            disconnectButton.id = 'disconnect_button'; // Установка идентификатора
+            
+            // Добавление кнопки в документ
+            document.body.appendChild(disconnectButton);
+            
+            // Обработчик события нажатия на кнопку
+            disconnectButton.addEventListener('click', () => {
+                tonConnectUI.disconnect();
+                console.log('Disconnect button clicked');
             });
         </script>
     </body>

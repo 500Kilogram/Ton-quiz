@@ -38,6 +38,12 @@ body {
   height: 30px;
 }
 
+#disconnect_button {
+  margin-right: auto;
+  width: 100px;
+  height: 30px;
+}
+
 
 #top_block #avatar_image {
   margin-left: auto;
