@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: (--tg-theme-header-bg-color);
+    background: var(--tg-theme-header-bg-color);
   }
   
   body {
