@@ -36,6 +36,12 @@
             const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
                 manifestUrl: 'https://500kilogram.github.io/Ton-quiz/tonconnect-manifest.json'
             })
+
+            tonConnectUI.uiOptions = {
+                twaReturnUrl: 't.me/Gg123455_bot/tonquiztest'
+            };
+
+
             async function connectToWallet() {
                 const connectedWallet = await tonConnectUI.connectWallet();
                 // Do something with connectedWallet if needed
