@@ -32,7 +32,10 @@
   }
   
 
-  
+  #top_block #action_button {
+    margin-left: auto;
+    height: 30px;
+  }
 
 
   #top_block #avatar_image {
