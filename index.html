@@ -17,7 +17,7 @@
             <button id="action_button">Action</button>
         </div>
         <div id="button_container_bottom">
-            <button id="main_button">Главна</button>
+            <button id="main_button">Главная</button>
             <button id="lottery_button">Квизы</button>
             <button id="info_button">Инфо</button>
             <button id="profile_button">Профиль</button>
@@ -28,8 +28,8 @@
             const tg = window.Telegram.WebApp;
             tg.expand()
 
-            document.getElementById("avatar_image").src = tg.WebAppUser.user.photo_url;
-            document.getElementById('user_name').innerHTML = tg.WebAppUser.user.first_name;
+            document.getElementById("avatar_image").src = "img/1.jpg";
+            document.getElementById('user_name').innerHTML = tg.initDataUnsafe.user;
         </script>
     </body>
 </html>
