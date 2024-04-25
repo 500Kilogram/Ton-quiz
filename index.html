@@ -15,7 +15,7 @@
         <div id="top_block">
             <!-- <img id="avatar_image"> -->
             <span id="user_name"></span>
-            <button id="action_button" style="margin-left: auto;" click="connectToWallet()">Подключить</button>
+            <button id="action_button" onclick="connectToWallet()">Подключить</button>
         </div>
         <div id="button_container_bottom">
             <button id="main_button">Главная</button>
@@ -41,11 +41,6 @@
                 // Do something with connectedWallet if needed
                 console.log(connectedWallet);
             }
-
-            // Call the function
-            connectToWallet().catch(error => {
-            console.error("Error connecting to wallet:", error);
-            });
         </script>
     </body>
 </html>
