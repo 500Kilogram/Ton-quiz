@@ -48,3 +48,9 @@
     cursor: pointer;
     transition: all 500ms ease;
   }
+
+
+  button:hover {
+    background: var(--tg-theme-secondary-bg-color);
+    color: #000000;
+  }
