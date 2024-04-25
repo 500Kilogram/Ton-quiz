@@ -6,7 +6,7 @@
   
   body {
     background: #000000;
-    color: #fff;
+    color: var(--tg-theme-text-color);
     font-family: "Forum", serif;
   }
   
