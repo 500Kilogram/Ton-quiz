@@ -9,7 +9,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start'])
 async def cmd_start(message: types.Message):
     markup = types.ReplyKeyboardMarkup()
-    markup.add(types.KeyboardButton('Открыть веб', web_app=WebAppInfo(url='https://google.com')))
+    markup.add(types.KeyboardButton('Открыть веб', web_app=WebAppInfo(url='https://500kilogram.github.io/Ton-quiz/')))
     await message.answer('Привет', reply_markup=markup)
 
 
