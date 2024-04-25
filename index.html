@@ -15,10 +15,10 @@
         <div id="top_block">
             <!-- <img id="avatar_image"> -->
             <span id="user_name"></span>
-            <button id="action_button" onclick="connectToWallet()">Подключить</button>
+            <button id="action_button">Подключить</button>
         </div>
         <div id="button_container_bottom">
-            <button id="main_button" onclick="disconnectWallet() ">isconnect</button>
+            <button id="main_button" onclick="disconnectWallet() ">Disconnect</button>
             <button id="lottery_button">Квизы</button>
             <button id="info_button">Инфо</button>
             <button id="profile_button">Профиль</button>
@@ -31,7 +31,7 @@
 
 
             document.getElementById('user_name').innerHTML = tg.initDataUnsafe.user.first_name;
-
+            let action_button = document.getElementById('action_button')
 
             const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
                 manifestUrl: 'https://500kilogram.github.io/Ton-quiz/tonconnect-manifest.json'
@@ -43,8 +43,15 @@
                 // Do something with connectedWallet if needed
                 console.log(connectedWallet.payload.items);
             }
-            connectToWallet().catch(error => {
-                console.error("Error connecting to wallet:", error);
+            
+            action_button.addEventListener('click', async () => {
+                try {
+                    // Здесь вы можете добавить асинхронную функцию или логику для отключения соединения или выполнения других действий
+                    await connectToWallet(); // Пример асинхронной функции
+                    console.log('connect button clicked');
+                } catch (error) {
+                    console.error('Error occurred:', error);
+                }
             });
             
             async function disconnectWallet() {
