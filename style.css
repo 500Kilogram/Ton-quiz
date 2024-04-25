@@ -68,12 +68,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 95%;
     padding: 10px;
   }
   
   #button_container_bottom button {
     margin: 0 10px;
     height: 30px;
-    width: 200px;
+    width: 250px;
   }
