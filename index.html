@@ -31,32 +31,7 @@
 
 
             document.getElementById('user_name').innerHTML = tg.initDataUnsafe.user.first_name;
-            let action_button = document.getElementById('action_button')
-
-            const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
-                manifestUrl: 'https://500kilogram.github.io/Ton-quiz/tonconnect-manifest.json'
-            })
-
-
-            async function connectToWallet() {
-                const connectedWallet = await tonConnectUI.connectWallet();
-                // Do something with connectedWallet if needed
-                console.log(connectedWallet.payload.items);
-            }
             
-            action_button.addEventListener('click', async () => {
-                try {
-                    // Здесь вы можете добавить асинхронную функцию или логику для отключения соединения или выполнения других действий
-                    await connectToWallet(); // Пример асинхронной функции
-                    console.log('connect button clicked');
-                } catch (error) {
-                    console.error('Error occurred:', error);
-                }
-            });
-            
-            async function disconnectWallet() {
-                await tonConnectUI.disconnect();
-            }
 
         </script>
     </body>
