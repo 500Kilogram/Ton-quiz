@@ -18,7 +18,7 @@
             <button id="action_button" onclick="connectToWallet()">Подключить</button>
         </div>
         <div id="button_container_bottom">
-            <button id="main_button">Главная</button>
+            <button id="main_button" onclick="disconnectWallet() ">disconnect</button>
             <button id="lottery_button">Квизы</button>
             <button id="info_button">Инфо</button>
             <button id="profile_button">Профиль</button>
@@ -43,6 +43,9 @@
 
             }
             
+            async function disconnectWallet() {
+                await tonConnectUI.disconnect();
+            }
 
             // Создание элемента кнопки
             const disconnectButton = document.createElement('button');
