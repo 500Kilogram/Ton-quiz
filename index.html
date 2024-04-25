@@ -18,7 +18,7 @@
             <button id="action_button" onclick="connectToWallet()">Подключить</button>
         </div>
         <div id="button_container_bottom">
-            <button id="main_button" onclick="disconnectWallet() ">Disconnect</button>
+            <button id="main_button" onclick="disconnectWallet() ">disconnect</button>
             <button id="lottery_button">Квизы</button>
             <button id="info_button">Инфо</button>
             <button id="profile_button">Профиль</button>
@@ -37,15 +37,12 @@
                 manifestUrl: 'https://500kilogram.github.io/Ton-quiz/tonconnect-manifest.json'
             })
 
-            tonConnectUI.uiOptions = {
-                twaReturnUrl: 'https://t.me/Gg123455_bot/tonquiztest'
-            };
-
 
             async function connectToWallet() {
                 const connectedWallet = await tonConnectUI.connectWallet();
                 // Do something with connectedWallet if needed
                 console.log(connectedWallet);
+                document.getElementById('user_name').innerHTML = "fdsf"
             }
             
             async function disconnectWallet() {
