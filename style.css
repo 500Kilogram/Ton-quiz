@@ -32,13 +32,6 @@ body {
 }
 
 
-#top_block #action_button {
-  position: absolute;
-  margin-right: auto;
-  width: 100px;
-  height: 30px;
-}
-
 
 #top_block #avatar_image {
   margin-left: auto;
