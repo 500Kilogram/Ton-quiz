@@ -2,9 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: var(--tg-theme-header-bg-color);
+  }
+
+
+  title {
+    background: #000000;
   }
   
+
   body {
     background: #000000;
     color: #ffffff;
