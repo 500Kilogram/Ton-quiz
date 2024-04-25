@@ -47,17 +47,31 @@
                 await tonConnectUI.disconnect();
             }
 
+            // Нахождение блока с идентификатором top_block
+            const topBlock = document.getElementById('top_block');
+            
             // Создание элемента кнопки
             const disconnectButton = document.createElement('button');
             disconnectButton.innerHTML = 'Disconnect';
-            disconnectButton.id = 'disconnect_button'; // Установка идентификатора
-            tonConnectUI.disconnect();
-            // Добавление кнопки в документ
-            document.body.appendChild(disconnectButton);
+            disconnectButton.id = 'disconnect-button'; // Установка идентификатора
             
+            // Добавление кнопки в блок top_block
+            topBlock.appendChild(disconnectButton);
+            
+            const actionButton = document.getElementById('action_button');
+
+            // Скрытие кнопки action_button
+            actionButton.style.display = 'none';
+
             // Обработчик события нажатия на кнопку
-            disconnectButton.addEventListener('click', () => {
+            disconnectButton.addEventListener('click', async () => {
+              try {
+                // Здесь вы можете добавить асинхронную функцию или логику для отключения соединения или выполнения других действий
+                await tonConnectUI.disconnect();
                 console.log('Disconnect button clicked');
+              } catch (error) {
+                console.error('Error occurred:', error);
+              }
             });
         </script>
     </body>
