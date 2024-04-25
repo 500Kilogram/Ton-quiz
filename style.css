@@ -19,8 +19,8 @@
 
 
   h1 {
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
   }
 
 
@@ -29,6 +29,12 @@
     height: 0 auto;
   }
 
+
+  p {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  
 
   button {
     border: 0;
