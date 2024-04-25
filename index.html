@@ -12,15 +12,15 @@
     </head>
     <body>
         <div class="main">
-            <img class="avatar-image" src="">
-            <span class="name"></span>
-            <button class="action-button">Action</button>
+            <img id="avatar_image" src="">
+            <span id="user_name"></span>
+            <button id="action_button">Action</button>
         </div>
-        <div class="button-container-bottom">
-            <button class="main-button">Главная</button>
-            <button class="lottery-button">Квизы</button>
-            <button class="info-button">Инфо</button>
-            <button class="profile-button">Профиль</button>
+        <div id="button_container_bottom">
+            <button id="main_button">Главная</button>
+            <button id="lottery_button">Квизы</button>
+            <button id="info_button">Инфо</button>
+            <button id="profile_button">Профиль</button>
         </div>
         <div></div>
         <script src="https://telegram.org/js/telegram-web-app.js"></script>
@@ -28,9 +28,9 @@
             const tg = window.Telegram.WebApp;
             tg.expand()
 
-            document.getElementById('name').value = tg.initDataUnsafe.user.first_name;
+            document.getElementById('user_name').value = tg.initDataUnsafe.user.first_name;
             const avatarUrl = tg.getUser().photoUrl;
-            const avatarImage = document.getElementById('avatar-image');
+            const avatarImage = document.getElementById('avatar_image');
             avatarImage.src = avatarUrl;
         </script>
     </body>

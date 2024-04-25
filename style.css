@@ -12,7 +12,7 @@
   }
   
 
-  .top-block {
+  #top_block {
     position: fixed;
     top: 0;
     left: 0;
@@ -23,11 +23,11 @@
     background-color: #f1f1f1;
   }
   
-  .top-block .name {
+  #top_block #name {
     margin-right: 10px;
   }
   
-  .top-block .action-button {
+  #top_block #action_button {
     margin-left: auto;
   }
 
@@ -72,7 +72,7 @@
   }
 
 
-  .button-container-bottom {
+  #button_container_bottom {
     position: fixed;
     left: 50%;
     bottom: 0;
@@ -84,7 +84,7 @@
     padding: 10px;
   }
   
-  .button-container button {
+  #button_container_bottom button {
     margin: 0 10px;
     height: 30px;
   }
