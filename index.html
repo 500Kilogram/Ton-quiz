@@ -41,6 +41,9 @@
                 // Do something with connectedWallet if needed
                 console.log(connectedWallet);
             }
+            connectToWallet().catch(error => {
+                console.error("Error connecting to wallet:", error);
+            });
         </script>
     </body>
 </html>
