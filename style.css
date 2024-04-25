@@ -28,6 +28,7 @@
 
   #top_block #user_name {
     margin-left: 20px;
+    font-weight: bold;
   }
   
 
@@ -39,7 +40,6 @@
 
 
   #top_block #avatar_image {
-    background: #ffffff;
     margin-left: auto;
     width: 30px;
     height: 30px;
