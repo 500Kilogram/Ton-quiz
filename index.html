@@ -18,7 +18,7 @@
             <button id="action_button" onclick="connectToWallet()">Подключить</button>
         </div>
         <div id="button_container_bottom">
-            <button id="main_button" onclick="disconnectWallet() ">disconnect</button>
+            <button id="main_button" onclick="disconnectWallet() ">Disconnect</button>
             <button id="lottery_button">Квизы</button>
             <button id="info_button">Инфо</button>
             <button id="profile_button">Профиль</button>
@@ -49,17 +49,6 @@
                 await tonConnectUI.disconnect();
             }
 
-
-            // Обработчик события нажатия на кнопку
-            disconnectButton.addEventListener('click', async () => {
-              try {
-                // Здесь вы можете добавить асинхронную функцию или логику для отключения соединения или выполнения других действий
-                await tonConnectUI.disconnect();
-                console.log('Disconnect button clicked');
-              } catch (error) {
-                console.error('Error occurred:', error);
-              }
-            });
         </script>
     </body>
 </html>
