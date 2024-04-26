@@ -41,7 +41,8 @@
             async function connectToWallet() {
                 const connectedWallet = await tonConnectUI.connectWallet();
                 console.log(connectedWallet);
-                document.getElementById('user_name').innerHTML = connectedWallet;
+                const myJSON = JSON.stringify(connectedWallet);
+                document.getElementById('user_name').innerHTML = myJSON;
             }
 
 
