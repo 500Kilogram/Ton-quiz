@@ -37,21 +37,21 @@ body {
 }
 
 
-button[data-tc-button="true"]{
+button[data-tc-connect-button="true"]{
   margin-left: auto;
   height: 30px;
   width: 150px;
 }
 
 
-button[data-tc-button="true"]:hover {
+button[data-tc-connect-button="true"]:hover {
   background: #ffffff;
   color: #000000;
   transform: scale(1.01);
 }
 
 
-button[data-tc-button="true"][data-tc-text="true"]{
+button[data-tc-connect-button="true"][data-tc-text="true"]{
   content: "Подключить";
 }
 
