@@ -19,7 +19,7 @@
         </div>
         <div id="button_container_bottom">
             <button id="main_button" onclick="DisconectWallet()">Disconnect</button>
-            <button id="lottery_button">Wallets</button>
+            <button id="lottery_button">Квесты</button>
             <button id="info_button">Инфо</button>
             <button id="profile_button">Профиль</button>
         </div>
@@ -38,6 +38,7 @@
 
 
             const currentIsConnectedStatus = tonConnectUI.connected;
+            console.log(currentIsConnectedStatus);
             (function(currentIsConnectedStatus) {
                 if (currentIsConnectedStatus === true) {
                     const currentAccount = tonConnectUI.account;
