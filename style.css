@@ -42,7 +42,6 @@ body {
   border-radius: 5px;
   cursor: pointer;
   font-family: "Forum", serif;
-  display: flex;
   align-items: center;
 }
 
