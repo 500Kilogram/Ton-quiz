@@ -48,12 +48,12 @@ body {
 
 
 #user_address {
-  margin-left: auto;
   margin-right: 5px;
   font-family: "Forum", serif;
   font-weight: bold;
   display: flex;
   text-align: right;
+  margin-left: auto;
 }
 
 
@@ -74,7 +74,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 5px;
-  margin-left: 0;
+  margin-right: 0;
 }
 
 
