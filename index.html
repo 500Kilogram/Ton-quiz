@@ -56,6 +56,7 @@
                     document.getElementById('action_button').innerHTML = 'Отключить';
                     document.getElementById('action_button').classList.add('disconnect_button');
                     document.getElementById('action_button').onclick = disconnectWallet;
+                    document.getElementById('action_button').style.display = 'flex';
                     const topBlock = document.getElementById('top_block');
                     const newElement = document.createElement('span');
                     fetch(`https://tonapi.io/v2/address/${currentAccount.address}/parse`)
