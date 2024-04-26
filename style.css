@@ -28,7 +28,7 @@ body {
 
 
 #user_name {
-  margin-right: 10px;
+  margin-right: 20px;
   font-weight: bold;
   font-family: "Forum", serif;
 }
@@ -36,6 +36,8 @@ body {
 
 #action_button {
   margin-left: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 35px;
   background: var(--tg-theme-button-color);
   border: none; 
