@@ -36,7 +36,7 @@ body {
 
 #action_button {
   margin-left: 5px;
-  padding: 5px 10px;
+  height: 35px;
   background: var(--tg-theme-button-color);
   border: none; 
   border-radius: 5px;
