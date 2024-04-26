@@ -45,14 +45,14 @@ button[data-tc-connect-button="true"]{
 
 
 button[data-tc-connect-button="true"]:hover {
-  background: #b75555;
+  background: #ffffff;
   color: #000000;
   transform: scale(1.01);
   transition: transform 0.3s ease;
 }
 
 
-button[data-tc-connect-button="true"]div{
+button[data-tc-connect-button="true"][data-tc-text="true"]{
   color: aqua;
   content: "Подключить";
 }
