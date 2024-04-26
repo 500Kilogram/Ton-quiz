@@ -1,3 +1,4 @@
+<<<<<<<<<<<<<<  ✨ Codeium Command 🌟 >>>>>>>>>>>>>>>>
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,7 +20,7 @@
         </div>
         <div id="button_container_bottom">
             <button id="main_button" onclick="DisconectWallet()">Disconnect</button>
-            <button id="lottery_button" onclick="getTonWallets()">Wallets info</button>
+            <button id="lottery_button" onclick="getTonWallets()">Wallets</button>
             <button id="info_button">Инфо</button>
             <button id="profile_button">Профиль</button>
         </div>
@@ -37,7 +38,7 @@
             });
 
 
-            async function getTonWallets() {
+            function getTonWallets() {
                 const currentIsConnectedStatus = tonConnectUI.connected;
                 console.log(currentIsConnectedStatus);
                 if (currentIsConnectedStatus) {
@@ -53,7 +54,7 @@
             
             
             async function connectToWallet() {
-                const connectedWallet = await tonConnectUI.connectWallet();
+                await tonConnectUI.connectWallet();
             }
 
 
@@ -64,3 +65,4 @@
         </script>
     </body>
 </html>
+<<<<<<<  b74dc64f-48e0-457f-bdfd-ad70b9ed2fcd  >>>>>>>
