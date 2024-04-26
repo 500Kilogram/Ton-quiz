@@ -18,7 +18,7 @@
             <button id="action_button" onclick="await connectToWallet()">Подключить</button>
         </div>
         <div id="button_container_bottom">
-            <button id="main_button" onclick="await DisconectWallet()">isconnect</button>
+            <button id="main_button" onclick="await DisconectWallet()">Disconnect</button>
             <button id="lottery_button">Квесты</button>
             <button id="info_button">Инфо</button>
             <button id="profile_button">Профиль</button>
@@ -41,6 +41,7 @@
             async function connectToWallet() {
                 const connectedWallet = await tonConnectUI.connectWallet();
                 console.log(connectedWallet);
+                document.getElementById('user_name').innerHTML = connectedWallet;
             }
 
 
