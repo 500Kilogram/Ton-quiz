@@ -59,7 +59,14 @@
                     document.getElementById('action_button').onclick = disconnectWallet;
                     const topBlock = document.getElementById('top_block');
                     const newElement = document.createElement('span');
-                    newElement.innerHTML = currentAccount.address.substr(0, 4) + '...' + currentAccount.address.substr(-4);
+                    fetch(`https://tonapi.io/v2/address/${currentAccount.address}/parse`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const nonBounceable = data.result.non_bounceable;
+                        const b64url = nonBounceable.b64url;
+                        console.log(b64url);
+                    })
+                    newElement.innerHTML = b64url.substr(0, 4) + '...' + b64url.substr(-4);
                     newElement.classList.add('user_address');
                     topBlock.appendChild(newElement);
                 }
