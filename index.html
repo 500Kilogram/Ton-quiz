@@ -38,16 +38,19 @@
 
 
             async function getTonWallets() {
-                const currentWallet = tonConnectUI.wallet;
-                const currentWalletInfo = tonConnectUI.walletInfo;
-                const currentAccount = tonConnectUI.account;
                 const currentIsConnectedStatus = tonConnectUI.connected;
-                console.log(currentWallet);
-                console.log(currentWalletInfo);
-                console.log(currentAccount.address);
                 console.log(currentIsConnectedStatus);
-
+                if (currentIsConnectedStatus) {
+                    const currentAccount = tonConnectUI.account;
+                    console.log(currentAccount.address);
+                    console.log(currentIsConnectedStatus);
+                }
+                else {
+                    console.log("Not connected");
+                }
             }
+            getTonWallets()
+            
             
             async function connectToWallet() {
                 const connectedWallet = await tonConnectUI.connectWallet();
