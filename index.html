@@ -49,11 +49,19 @@
 
 
             async function getTonWallets() {
-                await new Promise(resolve => setTimeout(resolve, 500));
+                await new Promise(resolve => setTimeout(resolve, 100));
                 const currentIsConnectedStatus = tonConnectUI.connected;
                 if (currentIsConnectedStatus) {
                     const currentAccount = tonConnectUI.account;
                     console.log(currentAccount.address);
+                    document.getElementById('action_button').innerHTML = 'Отключить';
+                    document.getElementById('action_button').classList.add('disconnect_button');
+                    document.getElementById('action_button').onclick = disconnectWallet;
+                    const topBlock = document.getElementById('top_block');
+                    const newElement = document.createElement('span');
+                    newElement.innerHTML = currentAccount.address.substr(0, 4) + '...' + currentAccount.address.substr(-4);
+                    newElement.classList.add('user_address');
+                    topBlock.appendChild(newElement);
                 }
                 else {
                     console.log("Not connect");
@@ -64,6 +72,11 @@
 
             async function connectToWallet() {
                 const connectedWallet = await tonConnectUI.connectWallet();
+            }
+
+
+            async function disconnectWallet() {
+                await tonConnectUI.disconnect();
             }
         </script>
     </body>
