@@ -47,7 +47,8 @@ button[data-tc-connect-button="true"]{
 button[data-tc-connect-button="true"]:hover {
   background: #ffffff;
   color: #000000;
-  transform: scale(1.005);
+  transform: scale(1.01);
+  transition: transform 0.3s ease;
 }
 
 
@@ -79,6 +80,7 @@ button:hover {
   background: #ffffff;
   color: #000000;
   transform: scale(1.01);
+  transition: transform 0.3s ease;
 }
 
 
