@@ -44,10 +44,10 @@ button[data-tc-button="true"]{
 }
 
 
-button[data-tc-button="true"]:hover{
+button[data-tc-button="true"]:hover {
   background: #ffffff;
   color: #000000;
-  scale: 1.01;
+  transform: scale(1.01);
 }
 
 
@@ -78,7 +78,7 @@ button {
 button:hover {
   background: #ffffff;
   color: #000000;
-  scale: 1.01;
+  transform: scale(1.01);
 }
 
 
