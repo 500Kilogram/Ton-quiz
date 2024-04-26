@@ -39,9 +39,7 @@
 
 
             async function getTonWallets() {
-                setTimeout(function() {
-                    console.log("After delay");
-                }, 5000);
+                await new Promise(resolve => setTimeout(resolve, 5000));
                 const currentIsConnectedStatus = tonConnectUI.connected;
                 console.log(currentIsConnectedStatus);
                 if (currentIsConnectedStatus) {
