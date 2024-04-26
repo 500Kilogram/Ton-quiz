@@ -17,43 +17,49 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  display: flex;
-  align-items: center;
   padding: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: #333232;
+  background-color: var(--tg-theme-button-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
-#top_block #user_name {
-  margin-left: 20px;
+#user_name {
+  margin-right: 10px;
   font-weight: bold;
   font-family: "Forum", serif;
 }
 
 
 #action_button {
+  margin-left: 5px;
   padding: 5px 10px;
-  margin-left: auto;
   background: var(--tg-theme-button-color);
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Cursor on hover */
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer;
   font-family: "Forum", serif;
-  /* Flex container to align items */
   display: flex;
   align-items: center;
 }
 
 
+#action_button:hover {
+  background: #ffffff;
+  color: #000000;
+  transform: scale(1.01);
+  transition: color 1s;
+  transition: transform 0.3s ease;
+}
+
+
 #user_address {
-  margin-right: 5px;
-  font-family: "Forum", serif;
-  font-weight: bold;
-  display: flex;
-  text-align: right;
   margin-left: auto;
+  font-weight: bold;
+  font-family: "Forum", serif;
 }
 
 
@@ -65,7 +71,7 @@ body {
 
 #action_button:hover svg {
   fill: #000000; /* Fill color of the SVG icon on hover */
-  transition: fill 0.35s;
+  transition: fill 1s;
 }
 
 
