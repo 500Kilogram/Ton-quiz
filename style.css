@@ -43,7 +43,15 @@ body {
   font-family: "Forum", serif;
   /* Flex container to align items */
   display: flex;
+  font-weight: bold;
   align-items: center;
+}
+
+
+#user_address {
+  margin-left: auto;
+  font-weight: bold;
+  font-family: "Forum", serif;
 }
 
 
