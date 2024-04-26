@@ -16,11 +16,11 @@
         <div id="top_block">
             <!-- <img id="avatar_image"> -->
             <span id="user_name"></span>
-            <button id="action_button" onclick="connectToWallet()">Подключить</button>
+            <div id="action_button"></div>
         </div>
         <div id="button_container_bottom">
-            <button id="main_button" onclick="DisconectWallet()">Disconnect</button>
-            <button id="lottery_button" onclick="getTonWallets()">Wallets</button>
+            <button id="main_button">Disconnect</button>
+            <button id="lottery_button">Wallets</button>
             <button id="info_button">Инфо</button>
             <button id="profile_button">Профиль</button>
         </div>
@@ -35,11 +35,16 @@
             
             const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
                 manifestUrl: 'https://500kilogram.github.io/Ton-quiz/tonconnect-manifest.json',
+                buttonRootId: 'action_button',
             });
+
+            tonConnectUI.uiOptions = {
+                language: 'ru',
+            };
 
 
             async function getTonWallets() {
-                await new Promise(resolve => setTimeout(resolve, 1000));
+                await new Promise(resolve => setTimeout(resolve, 500));
                 const currentIsConnectedStatus = tonConnectUI.connected;
                 console.log(currentIsConnectedStatus);
                 if (currentIsConnectedStatus) {
@@ -52,17 +57,7 @@
                 }
             }
             getTonWallets()
-            
-            
-            async function connectToWallet() {
-                await tonConnectUI.connectWallet();
-            }
 
-
-            async function DisconectWallet() {
-                await tonConnectUI.disconnect();
-                console.log("Disconect");
-            }
         </script>
     </body>
 </html>
