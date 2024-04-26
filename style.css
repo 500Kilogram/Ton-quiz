@@ -32,29 +32,29 @@ body {
 }
 
 
-#top_block #action_button {
+#action_button {
+  padding: 5px 10px;
   margin-left: auto;
+  background: var(--tg-theme-button-color);
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor on hover */
+
+  /* Flex container to align items */
+  display: flex;
+  align-items: center;
 }
 
 
-button[data-tc-connect-button="true"]{
-  margin-left: auto;
-  height: 30px;
-  width: 150px;
+#action_button svg {
+  fill: rgb(255, 255, 255); /* Fill color of the SVG icon */
+  margin-right: 5px; /* Margin between icon and text */
 }
 
 
-button[data-tc-connect-button="true"]:hover {
-  background: #ffffff;
-  color: #000000;
-  transform: scale(1.01);
-  transition: transform 0.3s ease;
-}
-
-
-button[data-tc-connect-button="true"][data-tc-text="true"]{
-  color: aqua;
-  content: "Подключить";
+#action_button:hover svg {
+  fill: #000000; /* Fill color of the SVG icon on hover */
+  transition: fill 0.2s;
 }
 
 
@@ -81,6 +81,7 @@ button:hover {
   background: #ffffff;
   color: #000000;
   transform: scale(1.01);
+  transition: color 0.3s;
   transition: transform 0.3s ease;
 }
 
