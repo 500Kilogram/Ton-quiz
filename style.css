@@ -32,10 +32,22 @@ body {
 }
 
 
-button[data-tc-button="true"]{
-  margin-right: auto;
+button[data-tc-connect-button="true"]{
+  margin-left: auto;
   height: 30px;
-  width: 200px;
+  width: 150px;
+  content: "Подключить";
+}
+
+
+button[data-tc-connect-button="true"]:hover{
+  background: #ffffff;
+  color: #000000;
+  scale: 1.01;
+}
+
+
+button[data-tc-connect-button="true"][data-tc-text="true"]{
   content: "Подключить";
 }
 
