@@ -29,6 +29,7 @@ body {
 #top_block #user_name {
   margin-left: 20px;
   font-weight: bold;
+  font-family: "Forum", serif;
 }
 
 
@@ -39,7 +40,7 @@ body {
   border: none; /* Remove border */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Cursor on hover */
-
+  font-family: "Forum", serif;
   /* Flex container to align items */
   display: flex;
   align-items: center;
@@ -74,7 +75,6 @@ button {
   color: var(--tg-theme-button-text-color);
   cursor: pointer;
   transition: all 500ms ease;
-  font-family: "Forum", serif;
 }
 
 
@@ -103,4 +103,5 @@ button:hover {
   margin: 0 10px;
   height: 30px;
   width: 25%;
+  font-family: "Forum", serif;
 }
