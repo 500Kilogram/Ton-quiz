@@ -45,8 +45,8 @@ button[data-tc-connect-button="true"]{
 
 
 button[data-tc-connect-button="true"]:hover {
-  background: #ffffff;
-  color: #000000;
+  background: #00ff22;
+  color: #f00505;
   transform: scale(1.01);
 }
 
