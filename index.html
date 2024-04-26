@@ -53,7 +53,6 @@
                 const currentIsConnectedStatus = tonConnectUI.connected;
                 if (currentIsConnectedStatus) {
                     const currentAccount = tonConnectUI.account;
-                    console.log(currentAccount.address);
                     document.getElementById('action_button').innerHTML = 'Отключить';
                     document.getElementById('action_button').classList.add('disconnect_button');
                     document.getElementById('action_button').onclick = disconnectWallet;
@@ -63,6 +62,7 @@
                     .then(response => response.json())
                     .then(data => {
                         const nonBounceable = data.non_bounceable;
+                        console.log(nonBounceable);
                         const b64url = nonBounceable.b64url;
                     })
                     newElement.innerHTML = b64url.substr(0, 4) + '...' + b64url.substr(-4);
