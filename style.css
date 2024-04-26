@@ -53,6 +53,7 @@ button[data-tc-connect-button="true"]:hover {
 
 
 button[data-tc-connect-button="true"][data-tc-text="true"]{
+  color: aqua;
   content: "Подключить";
 }
 
