@@ -49,9 +49,11 @@ body {
 
 
 #user_address {
-  margin-left: 5px;
-  font-weight: bold;
+  margin-left: auto;
+  margin-right: 5px;
   font-family: "Forum", serif;
+  font-weight: bold;
+  text-align: right;
 }
 
 
