@@ -41,7 +41,7 @@ body {
   height: 35px;
   background: var(--tg-theme-button-color);
   border: none; 
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   font-family: "Forum", serif;
   align-items: center;
