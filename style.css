@@ -32,7 +32,7 @@ body {
 }
 
 
-#top_block #action_button {
+Button[data-tc-button="true"]{
   margin-left: auto;
   height: 30px;
   width: 120px;

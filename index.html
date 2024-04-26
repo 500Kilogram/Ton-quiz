@@ -46,11 +46,9 @@
             async function getTonWallets() {
                 await new Promise(resolve => setTimeout(resolve, 500));
                 const currentIsConnectedStatus = tonConnectUI.connected;
-                console.log(currentIsConnectedStatus);
                 if (currentIsConnectedStatus) {
                     const currentAccount = tonConnectUI.account;
                     console.log(currentAccount.address);
-                    console.log(currentIsConnectedStatus);
                 }
                 else {
                     console.log("Not connect");
