@@ -62,12 +62,11 @@
                     .then(response => response.json())
                     .then(data => {
                         const nonBounceable = data.non_bounceable;
-                        console.log(nonBounceable);
                         const b64url = nonBounceable.b64url;
+                        newElement.innerHTML = b64url.substr(0, 4) + '...' + b64url.substr(-4);
+                        newElement.classList.add('user_address');
+                        topBlock.appendChild(newElement);
                     })
-                    newElement.innerHTML = b64url.substr(0, 4) + '...' + b64url.substr(-4);
-                    newElement.classList.add('user_address');
-                    topBlock.appendChild(newElement);
                 }
                 else {
                     console.log("Not connect");
